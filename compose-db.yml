@@ -1,0 +1,10 @@
+services:
+  postgres:
+    container_name: orders-db
+    image: 'postgres:16.4'
+    environment:
+      - 'POSTGRES_DB=orders'
+      - 'POSTGRES_PASSWORD=password'
+      - 'POSTGRES_USER=user'
+    ports:
+      - '5432:5432'

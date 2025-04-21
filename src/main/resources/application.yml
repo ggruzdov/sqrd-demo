@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: sqrd-demo
+  docker:
+    compose:
+      skip:
+        in-tests: false
+      stop:
+        command: down
+      file: compose-db.yml
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/orders
+    username: user
+    password: password
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+  web:
+    resources:
+      add-mappings: false
+
+app:
+  pilotes-price: 1.33
+  order-update-lifetime: 5m

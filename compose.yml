@@ -1,0 +1,14 @@
+include:
+  - compose-db.yml
+
+services:
+  appointment:
+    image: ggruzdov/sqrd-demo:1.0
+    container_name: sqrd-demo
+    ports:
+      - '8080:8080'
+    environment:
+      - 'POSTGRES_HOST=orders-db'
+    depends_on:
+      - postgres
+    restart: always
