@@ -88,7 +88,7 @@ curl --location --request PUT 'http://localhost:8080/orders' \
 ```
 
 To use the search endpoint, which is secured, we have to log in first.  
-**NOTE:** here you can get credentials of registered users [flyway-migration](https://github.com/ggruzdov/sqrd-demo/blob/main/sqrddemo/src/main/resources/db/migration/V1.02__add_customers.sql)
+**NOTE:** here you can get credentials of registered users [flyway-migration](https://github.com/ggruzdov/sqrd-demo/blob/main/src/main/resources/db/migration/V1.02__add_customers.sql)
 
 ### Login
 ```bash
