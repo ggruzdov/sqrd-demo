@@ -60,7 +60,7 @@ docker compose down
 
 ## Usage Examples
 
-### Place an order(not secure endpoint)
+### Place an order(not secured endpoint)
 ```bash
 curl --location --request POST 'http://localhost:8080/orders' \
 --header 'Content-Type: application/json' \
@@ -88,7 +88,7 @@ curl --location --request PUT 'http://localhost:8080/orders' \
 ```
 
 To use the search endpoint, which is secured, we have to log in first.  
-**NOTE:** here you can get credentials of registered users [flyway-migration](https://github.com/ggruzdov/sqrd-demo/blob/main/src/main/resources/db/migration/V1.02__add_customers.sql)
+**NOTE:** you can get credentials of registered users here [flyway-migration](https://github.com/ggruzdov/sqrd-demo/blob/main/src/main/resources/db/migration/V1.02__add_customers.sql)
 
 ### Login
 ```bash
